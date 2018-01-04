@@ -1,1 +1,1 @@
-{"dependencies":[],"generated":{"js":""},"hash":"32981a13284db7a021131df49e6cd203"}
+{"dependencies":[],"generated":{"js":"window.onload = function() {\n    document.querySelector('#linkToCompany').setAttribute('href','www.richerhead.com')\n}"},"hash":"fd106131abe72342a18bfa95911f3f93"}

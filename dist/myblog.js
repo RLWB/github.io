@@ -65,8 +65,10 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({2:[function(require,module,exports) {
-
+})({3:[function(require,module,exports) {
+window.onload = function() {
+    document.querySelector('#linkToCompany').setAttribute('href','www.richerhead.com')
+}
 },{}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -85,7 +87,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent) {
-  var ws = new WebSocket('ws://localhost:50693/');
+  var ws = new WebSocket('ws://localhost:65433/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -186,4 +188,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,2])
+},{}]},{},[0,3])
