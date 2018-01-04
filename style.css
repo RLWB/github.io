@@ -1,8 +1,13 @@
-html{
+@import './node_modules/normalize.css/normalize.css';
+*,::after,::before {
+    box-sizing: border-box;
+}
+html {
     height: 100%;
     border-top: 2px solid #363533;
+    box-sizing: border-box;
 }
-body{
+body {
     color: #363533;
     background-color: #fff;
     font-size: 14px;
